@@ -1,0 +1,7 @@
+table Bookings {
+	int id primary key;
+	int resource_id FOREIGN KEY REFERENCES id(Resources);
+	date start_time;
+	date end_time;
+	string status;
+}
